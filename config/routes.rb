@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   get 'page/home'
   devise_for :users
 
