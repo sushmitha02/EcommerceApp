@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>EcommerceApp</title>
+  <head>
+    <title>EcommerceApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name ='keywords' content="<%= @seo_keywords %>"/>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
-
-<body>
-
-  <%= render 'layouts/header' %>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <%= yield %>
-      </div>
-    </div>
-    <footer>
-      <p>&copy; Company 2019</p>
-    </footer>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
     
-  </div>
+  </head>
 
-</body>
+  <body>
+      <%= render 'layouts/header' %>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+            <p>&copy; Company 2019</p>
+          </footer>
+          
+        </div>
+
+
+  </body>
 </html>

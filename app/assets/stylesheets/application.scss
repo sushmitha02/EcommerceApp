@@ -3,7 +3,19 @@
 .container-fluid{
 	padding-right: 700px;
 }
+/*
+ * Base structure
+ */
 
+html,
+body {
+  height: 100%;
+}
+body {
+  color: black;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -35,8 +47,3 @@
   carousel-item: image-url('carousel3.png') no-repeat;
 
 }
-
-
-
-
-
