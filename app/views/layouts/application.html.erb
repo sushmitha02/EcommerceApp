@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>EcommerceApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>EcommerceApp</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= render 'layouts/header' %>
-    <%= yield %>
-  </body>
+<body>
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <%= yield %>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; Company 2019</p>
+    </footer>
+    
+  </div>
+
+</body>
 </html>

@@ -59,3 +59,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mongoid'
 
 gem 'devise'
+
+gem 'bootstrap', '~> 4.3'
+
+gem 'jquery-rails'
+
+gem 'jquery-ui-rails', '~> 6.0'
