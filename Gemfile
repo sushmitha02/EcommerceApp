@@ -65,3 +65,10 @@ gem 'bootstrap', '~> 4.3'
 gem 'jquery-rails'
 
 gem 'jquery-ui-rails', '~> 6.0'
+
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+gem 'carrierwave-aws', '~> 1.3'
