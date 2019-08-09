@@ -3,6 +3,7 @@
 .container-fluid{
 	padding-right: 700px;
 }
+
 /*
  * Base structure
  */
@@ -12,25 +13,73 @@ body {
   height: 100%;
 }
 body {
-  color: black;
+  color: white;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
-#background{
-  position: fixed;
+cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+.background-image {
+  position :fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
+  z-index: -400;
+  -webkit-transform: translateX(-30%) translateY(-70%);
   transform: translateX(-50%) translateY(-50%);
   background: image-url('cover.jpg') no-repeat;
   background-size: cover;
 }
+
+.slide1-font {
+  color: orangered;
+}
+
+/*
+* Cover
+*/
+
+.cover {
+  padding: 0 1.5rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+
+.col-md-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+  text-align: center;
+}
+
+.col-md-8 {
+text-align: center;
+}
+.col-md-8 .lead {
+  align: center;
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+.masthead {
+  position: fixed;
+  top: 0;
+}
+
+.col-md-6 {
+  text-align: center;
+  line-height: 2.0; 
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -62,3 +111,19 @@ body {
   carousel-item: image-url('carousel3.png') no-repeat;
 
 }
+
+/*
+* Footer
+*/
+
+.mastfoot {
+color: white;
+}
+
+.footer-style {
+  margin-top: 8rem;
+  color: black;
+}
+
+
+
