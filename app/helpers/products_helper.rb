@@ -3,7 +3,7 @@ module ProductsHelper
 		"http://placehold.it/#{height}x#{width}"
 	end
 
-	def portfolio_img img, type
+	def product_img img, type
 		if img
 			img
 		elsif type == 'thumb'

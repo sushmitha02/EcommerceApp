@@ -5,7 +5,6 @@ class Product extend CarrierWave::Mount
 	field :price, type: Float
 	field :main_image, type: String
 	field :thumb_image, type: String
-	field :order_id, type: Integer
 
 	mount_uploader :thumb_image, ProductUploader
 	mount_uploader :main_image, ProductUploader
