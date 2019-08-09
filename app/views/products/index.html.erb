@@ -1,6 +1,11 @@
 <div class="album text-muted">
+
   <div class="container">
+	<%= link_to 'New Product', new_product_path %>
+
   <%= render "shared/banner"%>
   <%= render partial: 'product', collection: @products %>
   </div>
+
 </div>
+
