@@ -3,62 +3,84 @@
 .container-fluid{
 	padding-right: 700px;
 }
-/*
- * Base structure
- */
 
-html,
-body {
-  height: 100%;
-}
-body {
-  color: black;
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-}
-
-#background{
-  position: fixed;
+.background-image {
+  position :fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
+  z-index: -400;
+  -webkit-transform: translateX(-30%) translateY(-70%);
   transform: translateX(-50%) translateY(-50%);
   background: image-url('cover.jpg') no-repeat;
   background-size: cover;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+/*
+ * Base structure
+ */
+body {
+  height: 100%;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  bottom: 3rem;
+body {
+  color: white;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+/*
+* Cover
+*/
+cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+.cover {
+  padding: 0 1.5rem;
+  text-align: center;
+  margin-top: 6rem;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-  carousel-item: image-url('carousel1.png') no-repeat;
-    carousel-item: image-url('carousel2.png') no-repeat;
-  carousel-item: image-url('carousel3.png') no-repeat;
 
+.col-md-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+  text-align: center;
 }
+
+.col-md-8 {
+text-align: center;
+}
+.btn-lg {
+  align: center;
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+.col-md-6 {
+  text-align: center;
+  line-height: 2.0; 
+}
+
+
+
+/*
+* Footer
+*/
+
+.mastfoot {
+color: white;
+}
+
+.footer-style {
+  margin-top: 8rem;
+  color: black;
+}
+
+
+

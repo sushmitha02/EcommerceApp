@@ -12,24 +12,15 @@
     
   </head>
 
-  <body>
+   <body>
 
-    <div id="background">
-      
-    </div>
-      <%= render 'layouts/header' %>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <%= yield %>
+            <div class= 'background-image'> 
+
             </div>
-          </div>
-          <footer>
-            <p>&copy; Company 2019</p>
-          </footer>
-          
-        </div>
-
+              <%= render 'layouts/header' %>
+              <%= yield %>
+              <%= render 'shared/application_footer'%> <!-- provides footer -->
 
   </body>
 </html>
+
