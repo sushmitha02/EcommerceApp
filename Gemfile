@@ -66,7 +66,7 @@ gem 'jquery-rails'
 
 gem 'jquery-ui-rails', '~> 6.0'
 
-gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'kaminari', '~> 1.2'
 
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 
